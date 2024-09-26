@@ -39,8 +39,8 @@ namespace HtmlConverter.Configurations
         /// Use this zoom factor
         /// </summary>
         [OptionFlag("--zoom")]
-        public int? Zoom { get; set; }
-        
+        public float? Zoom { get; set; }
+
         public ImageConfiguration()
         {
             WkhtmlPath = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "C:\\Program Files\\wkhtmltopdf\\bin" : "";
